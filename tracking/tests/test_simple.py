@@ -1,6 +1,7 @@
 from ..models import SimpleTracker
 from django.contrib.auth.models import User
 from datetime import datetime, timedelta
+from django.test import TestCase
 import pytz
 
 class SimpleTrackerTest(TestCase):
@@ -14,7 +15,7 @@ class SimpleTrackerTest(TestCase):
         #)
         
         # Test cases
-        cls.a01 = SimpleTracker.objects.creeate(
+        cls.a01 = SimpleTracker.objects.create(
             pk = 1,
             tracker_name = 'Simple Test 1 - active',
             tracker_location = 'tracker-head-top',
