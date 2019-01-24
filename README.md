@@ -20,14 +20,14 @@ Tracking is a simple Django app that allows you to curate all of the "tracking p
 
 Each tracker has:
 
-    * A title - only used for record-keeping
-    * A location: the code comes with the 4 most-common template locations (but you can add others):
-        * tracker-head-top: <head> - near the top;
-        * tracker-head-bottom: <head> - near the bottom;
-        * tracker-body-top: <body> - near the top;
-        * tracker-body-bottom: <body> - near the bottom.
-    * some kind of status flag that indicates whether the tracker should be used (see below);
-    * The code (HTML, or Javascript) that will be placed in the template when the page is loaded.
+* A title - only used for record-keeping
+* A location: the code comes with the 4 most-common template locations (but you can add others):
+    * tracker-head-top: <head> - near the top;
+    * tracker-head-bottom: <head> - near the bottom;
+    * tracker-body-top: <body> - near the top;
+    * tracker-body-bottom: <body> - near the bottom.
+* some kind of status flag that indicates whether the tracker should be used (see below);
+* The code (HTML, or Javascript) that will be placed in the template when the page is loaded.
 
 # Simple vs. Gated Trackers
 
