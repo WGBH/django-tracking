@@ -5,9 +5,9 @@ import django
 from django.conf import settings
 from django.test.utils import get_runner
 if __name__ == "__main__":
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'tracker.tests.settings'
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'tracking.tests.settings'
     django.setup()
     TestRunner = get_runner(settings)
     test_runner = TestRunner()
-    failures = test_runner.run_tests(["tracker.tests"])
+    failures = test_runner.run_tests(["tracking.tests"])
     sys.exit(bool(failures))
