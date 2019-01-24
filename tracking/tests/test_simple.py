@@ -7,11 +7,11 @@ class SimpleTrackerTest(TestCase):
     
     @classmethod
     def setUpTestData(cls):
-        cls.user = User.objects.create_superuser(
-            username='dttest',
-            email='test@test.com',
-            password='0(8&6'
-        )
+        #cls.user = User.objects.create_superuser(
+        #    username='dttest',
+        #    email='test@test.com',
+        #    password='0(8&6'
+        #)
         
         # Test cases
         cls.a01 = SimpleTracker.objects.creeate(
@@ -30,7 +30,8 @@ class SimpleTrackerTest(TestCase):
         )
         
     def setUp(self):
-        self.client.login(username='dttest', password='0(8&6')
+        #self.client.login(username='dttest', password='0(8&6')
+        pass
         
     def test_who_is_live(self):
         active_cases = SimpleTracker.objects.filter(tracker_status=1)
